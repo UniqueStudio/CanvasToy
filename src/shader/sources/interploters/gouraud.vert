@@ -11,12 +11,12 @@ struct Light {
     vec3 specular;
     vec3 diffuse;
     float idensity;
-    vec3 position;
+    vec4 position;
     bool directional;
 }; // light
 
 uniform vec3 ambient;
-uniform vec3 eyePos;
+uniform vec4 eyePos;
 uniform mat4 normalMatrix;
 attribute vec3 aNormal;
 varying vec3 vLightColor;
